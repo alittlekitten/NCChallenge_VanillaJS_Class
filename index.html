@@ -1,0 +1,41 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Something</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="js-clock">
+        <h1>00:00</h1> <!-- 임시로 -->
+    </div>
+    <form class="js-form form"> <!-- 작성창용 css를 적용하기 위해 class를 2개로!! form을 통해 엔터를 누를 때마다 정보가 전달!! -->
+        <input type="text" placeholder="What is your name?" /> <!-- 입력창 추가 -->
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+
+    <!-- 할 일을 작성하는 부분 -->
+    <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+    </form>
+
+    <!-- 이 부분에 toDoList안에 들어갈 내용들이 출력된다 -->
+    <ul class="js-toDoList"> 
+
+    </ul>
+
+    <span class="js-weather"></span>
+
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+
+</html>
